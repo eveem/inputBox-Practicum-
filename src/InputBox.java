@@ -18,7 +18,7 @@ public class InputBox {
 	   int[][] all = new int [len][5];
 	   int[] carry = new int [5];
 	   for (int i = 0; i < len; i++) {
-		   carry = characterValue(str.substring(i, i+1));
+		   carry = characterValue(str.substring(i, i+1).toUpperCase());
 		   for (int j = 0; j < 5; j++) {
 			   all[i][j] = carry[j];
 		   }
@@ -26,6 +26,7 @@ public class InputBox {
    }
    
    public static int[] characterValue(String ch) {
+	   System.out.println(ch);
 	   int[] value = new int [5];
 	   if (ch.equals("A")) {
 		   value[0] = 254;
