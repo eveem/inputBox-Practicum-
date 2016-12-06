@@ -23,6 +23,12 @@ public class InputBox {
 			   all[i][j] = carry[j];
 		   }
 	   }
+	   for (int i = 0; i < len; i++) {
+		   for (int j = 0; j < 5; j++) {
+			   System.out.print(all[i][j] + ", ");
+		   }
+		   System.out.println("");
+	   }
    }
    
    public static int[] characterValue(String ch) {
@@ -279,7 +285,118 @@ public class InputBox {
 		   value[3] = 129;
 		   value[4] = 126;
 	   }
-
+	   else if (ch.equals("!")) {
+		   value[0] = 0;
+		   value[1] = 0;
+		   value[2] = 191;
+		   value[3] = 0;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("#")) {
+		   value[0] = 36;
+		   value[1] = 126;
+		   value[2] = 36;
+		   value[3] = 126;
+		   value[4] = 36;
+	   }
+	   else if (ch.equals("?")) {
+		   value[0] = 6;
+		   value[1] = 1;
+		   value[2] = 177;
+		   value[3] = 9;
+		   value[4] = 6;
+	   }
+	   else if (ch.equals(">")) {
+		   value[0] = 0;
+		   value[1] = 130;
+		   value[2] = 68;
+		   value[3] = 40;
+		   value[4] = 16;
+	   }
+	   else if (ch.equals("<")) {
+		   value[0] = 16;
+		   value[1] = 40;
+		   value[2] = 68;
+		   value[3] = 130;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("-")) {
+		   value[0] = 0;
+		   value[1] = 8;
+		   value[2] = 8;
+		   value[3] = 8;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("*")) {
+		   value[0] = 0;
+		   value[1] = 20;
+		   value[2] = 8;
+		   value[3] = 20;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("/")) {
+		   value[0] = 32;
+		   value[1] = 16;
+		   value[2] = 8;
+		   value[3] = 4;
+		   value[4] = 2;
+	   }
+	   else if (ch.equals("+")) {
+		   value[0] = 0;
+		   value[1] = 8;
+		   value[2] = 28;
+		   value[3] = 8;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("=")) {
+		   value[0] = 0;
+		   value[1] = 20;
+		   value[2] = 20;
+		   value[3] = 20;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("_")) {
+		   value[0] = 0;
+		   value[1] = 128;
+		   value[2] = 128;
+		   value[3] = 128;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals(".")) {
+		   value[0] = 0;
+		   value[1] = 0;
+		   value[2] = 128;
+		   value[3] = 0;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("^")) {
+		   value[0] = 4;
+		   value[1] = 2;
+		   value[2] = 1;
+		   value[3] = 2;
+		   value[4] = 4;
+	   }
+	   else if (ch.equals("'")) {
+		   value[0] = 0;
+		   value[1] = 0;
+		   value[2] = 3;
+		   value[3] = 0;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("\"")) {
+		   value[0] = 0;
+		   value[1] = 3;
+		   value[2] = 0;
+		   value[3] = 3;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals(":")) {
+		   value[0] = 0;
+		   value[1] = 0;
+		   value[2] = 20;
+		   value[3] = 0;
+		   value[4] = 0;
+	   }
 	   return value;
    }
 }
