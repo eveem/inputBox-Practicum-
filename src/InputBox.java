@@ -26,7 +26,6 @@ public class InputBox {
    }
    
    public static int[] characterValue(String ch) {
-	   System.out.println(ch);
 	   int[] value = new int [5];
 	   if (ch.equals("A")) {
 		   value[0] = 254;
@@ -210,6 +209,77 @@ public class InputBox {
 		   value[3] = 133;
 		   value[4] = 131;
 	   }
+	   else if (ch.equals("1")) {
+		   value[0] = 0; 
+		   value[1] = 65;
+		   value[2] = 255;
+		   value[3] = 128;
+		   value[4] = 0;
+	   }
+	   else if (ch.equals("2")) {
+		   value[0] = 194;
+		   value[1] = 161;
+		   value[2] = 145;
+		   value[3] = 137;
+		   value[4] = 134;
+	   }
+	   else if (ch.equals("3")) {
+		   value[0] = 66; 
+		   value[1] = 129;
+		   value[2] = 137;
+		   value[3] = 137;
+		   value[4] = 118;
+	   }
+	   else if (ch.equals("4")) {
+		   value[0] = 63;
+		   value[1] = 32;
+		   value[2] = 32;
+		   value[3] = 255;
+		   value[4] = 32;
+	   }
+	   else if (ch.equals("5")) {
+		   value[0] = 79; 
+		   value[1] = 137;
+		   value[2] = 137;
+		   value[3] = 137;
+		   value[4] = 113;
+	   }
+	   else if (ch.equals("6")) {
+		   value[0] = 126;
+		   value[1] = 137;
+		   value[2] = 137;
+		   value[3] = 137;
+		   value[4] = 112;
+	   }
+	   else if (ch.equals("7")) {
+		   value[0] = 1; 
+		   value[1] = 225;
+		   value[2] = 17;
+		   value[3] = 9;
+		   value[4] = 7;
+	   }
+	   else if (ch.equals("8")) {
+		   value[0] = 118;
+		   value[1] = 137;
+		   value[2] = 137;
+		   value[3] = 137;
+		   value[4] = 118;
+	   }
+	   else if (ch.equals("9")) {
+		   value[0] = 14; 
+		   value[1] = 145;
+		   value[2] = 145;
+		   value[3] = 145;
+		   value[4] = 126;
+	   }
+	   else if (ch.equals("0")) {
+		   value[0] = 126;
+		   value[1] = 129;
+		   value[2] = 129;
+		   value[3] = 129;
+		   value[4] = 126;
+	   }
+
 	   return value;
    }
 }
